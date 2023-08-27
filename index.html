@@ -1,55 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgba(255,105,180) ;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>PÁGINA DO PRODUTO </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #990c8d;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #db7dcc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+           
+ 
+    color: #007bff; 
+
+            
+        }
+        .btn-buy {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .social-icons {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-  }
-
-  .content {
-    background-color: rgba(244,164,96);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(186,85,211);
-  }
-
-  h1 {
-    margin: 0;
-  }
-
-  p {
-    margin: 10px 0;
-  }
-
-  .animated-text {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 24px;
-  color: #333;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+    margin-top: 20px;
 }
 
 .social-icons a {
@@ -61,39 +51,178 @@
     width: 50px; /* Ajuste o tamanho conforme necessário */
     height: 50px;
 }
-.gif-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.caixa {
+            width: 250px;
+            padding: 20px;
+            border: 2px solid #ccc;
+            background-color: #f56df5;
+            
+        }
+        texto-com-borda {
+            border: 2px solid #dfd1d1;
+            padding: 10px;
+        }
+        .informacoes-com-borda {
+            border: 2px solid #000;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .imagem-animada {
+            width: 100px; /* Largura inicial */
+            transition: width 0.3s; /* Efeito de transição suave na largura */
+            animation: animacao-imagem 3s infinite alternate; /* Animar a imagem */
+        }
+
+        @keyframes animacao-imagem {
+            from {
+                width: 100px;
+            }
+            to {
+                width: 70px; /* Largura final após animação */
+            }
+        }
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #3b393b;
+            overflow: hidden;
+        }
+       h1 {
+        color: #ccc;
+       }
+/* Estilização da caixa de informações */
+.info-box {
+    border: 2px solid #000; /* Adicione uma borda sólida de 2px na cor preta (#000) */
+    padding: 10px; /* Adicione algum espaço interno para melhorar o espaçamento */
+    width: 250px; /* Defina uma largura para a caixa */
+    margin: 30px auto; /* Centralize horizontalmente com alguma margem superior */
+}
+.animated-text {
+    font-size: 36px;
+    text-align: center;
+    animation: colorChange 3s infinite alternate;
 }
 
-.gif-container img {
-  max-width: 50%; /* Defina a largura desejada, por exemplo, 50% */
-  height: auto; /* Mantém a proporção da imagem */
+@keyframes colorChange {
+    0% {
+        color: rgb(255, 6, 6);
+    }
+    100% {
+        color: rgb(55, 238, 95);
+    }
 }
-  
-</style>
-<title>PAGINA DO PRODUTO</title>
+.image-with-text {
+    display: flex; /* Use flexbox para alinhar os elementos lado a lado */
+    align-items: center; /* Alinhe verticalmente os elementos */
+}
+
+.image-with-text img {
+    width: 50%; /* Ajuste a largura da imagem conforme necessário */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .conteudo {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+.riscado {
+    text-decoration: line-through;
+}
+.conteudo {
+    padding: 20px;
+}
+  /* Media query para telas menores (dispositivos móveis) */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 5px 0;
+    } 
+ /* Estilos para a seção de informações do criador */
+        .creator-info {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .creator-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .creator-contact {
+            margin-top: 10px;
+        }
+
+            
+    </style>
 </head>
 <body>
+     <div class="conteudo">
+    <div class="container"><nav>
+        <ul class="menu">
+          <center><img src="hotmart-42.svg" alt="logotipo" style="max-width: 45%;"></center>
+        <center><h1 class="texto-com-borda" > RECEITAS FITNESS PARA UMA VIDA EQUILIBRADA</h1></center></ul></nav>
+        <p></p><p></p>
+        <center><h2>E-Book Receita Fit: Nutrição Saudável para um Novo Você!</h2></center><p></p>
+        <center><img src="Receita.jpg" alt="Capa do Livro Receita Fit" style="max-width: 80%;"></center>
+        <p><p></p>
+        <center><h3>Desbloqueie o poder da alimentação saudável com nosso eBook Receita Fit.<p>Este guia abrangente oferece receitas deliciosas, planos de refeições equilibradas</h3></center>
+       <center><video width="280" height="240" controls autoplay loop>
+            <source src="video2.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video></center>
+        <p></p><p>
+        <div class="caixa">
+        <p>Descubra uma nova maneira de se alimentar com prazer e consciência. 20 receitas deliciosas e saudáveis para todas as refeições do dia.</p>
+        <p>Benefícios: Aumente sua energia, mantenha um peso saudável e melhore sua saúde geral.</p></div>
+        <p><p></p>
+       
+            <div class="image-with-text">
+        <img src="moça.png" alt="Imagem Animada" class="imagem-animada">
+        <p>Transforme sua dieta e alcance seus objetivos de saúde com confiança.</p>
+            </div>
+            <h2><span class="riscado"></span></h2>
+        <p class="animated-text">R$16.99</span></p>
+            
+        
+       <center> <a href="https://pay.hotmart.com/V85429467P?off=xw4p9rlf"><button class="btn-buy">Comprar Agora</button></a></center>
+        <center><p>Garantia de Satisfação:
+            Se não estiver 100% satisfeito com nosso eBook, oferecemos uma garantia de reembolso total em até 30 dias</p></center>
+       
+            <div class="info-box">
+               <center><p>Para mais informações, entre em contato pelo email: receitafitlima@gmail.com</p></center>
+            </div>
+<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/43670823.js"></script>
+<!-- End of HubSpot Embed Code -->
+            <div class="social-icons">
+                <a href="https://instagram.com/fitr.eceita?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://wa.link/i5ygi5">
+                    <img src="whatsapp.png" alt="WhatsApp">
+                </a>
+                <p></p>
+            </div>
 
-    
-  <div class="gif-container">
-    <img src="g.gif" alt="GIF animado">
-    <div class="animated-text"> 
-    </div>
-    <h1>LOJA EM MANUTENÇÃO</h1>
-    <p>VOLTAMOS EM BREVE</p>
-    <p>Para fazer uma compra chame pelo whatsapp.<p>clique icones abaixo</p>
+     <center>   <main>
+        <section class="creator-info">
+            <p>Informações do Criador Página Web</p>
+            <p class="creator-name">Max Lima</p>
+            <p>Email: <a href="mailto:email@example.com">jlsdesing2022@gmail.com</a></p>
+        
+          <p>(11) 9 5983-4631</p>
+            </p>
 
+        </section>
 
-  <div class="social-icons">
-    <a href="https://instagram.com/fitr.eceita?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">
-        <img src="instagram.png" alt="Instagram">
-    </a>
-    <a href="https://wa.link/i5ygi5">
-        <img src="whatsapp.png" alt="WhatsApp">
-    </a>
+        <!-- Restante do conteúdo da página -->
+    </main>
+     
+    <footer>
+        <p>&copy; 2023 Minha Página. Todos os direitos reservados.</p>
+    </footer>
+     </center> 
 </body>
 </html>
