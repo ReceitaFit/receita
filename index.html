@@ -159,14 +159,19 @@
         }
 
          .background-container {
-    background-image: url('12.jpg');
+    background-image: url('12.JPEG');
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir o contêiner */
     background-position: center; /* Centraliza a imagem no contêiner */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     /* Outros estilos do contêiner aqui */
 }
 
-       
+    @media (max-width: 768px) {
+    .background-container {
+        background-size: contain; /* Ou outra abordagem que funcione bem em telas menores */
+    }
+}
+   
     </style>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0NZ0QJTN2"></script>
