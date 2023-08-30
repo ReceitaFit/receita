@@ -140,7 +140,11 @@
 .conteudo {
     padding: 20px;
 }
-
+  /* Media query para telas menores (dispositivos móveis) */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 5px 0;
+    }
  /* Estilos para a seção de informações do criador */
         .creator-info {
             margin-top: 20px;
@@ -156,10 +160,7 @@
         }
         }
         
-@media (max-width: 768px) {
-    .background-container {
-        background-size: contain; /* Ou outra abordagem que funcione bem em telas menores */
-    }
+
 }
          .background-container {
     background-image: url('12.jpg');
