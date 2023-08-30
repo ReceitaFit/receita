@@ -204,7 +204,47 @@
     box-shadow: 0px 0px 300px rgba(255, 255, 255, 0.8); /* Sombra simulando luz */
     /* Outros estilos do contêiner aqui */
 }
+/*estilo do menu */
+/* Estilo do contêiner do menu */
+.menu-container {
+    position: fixed; /* Fixa o menu para que ele fique visível mesmo ao rolar */
+    top: 0; /* Posiciona o menu no topo */
+    left: 0; /* Posiciona o menu no canto esquerdo */
+    width: 100%; /* Largura total da página */
+    background-color: #534c4c;
+    padding: 15px 0; /* Espaçamento interno vertical do menu */
+    box-shadow: 0 5px 10px rgba(255, 240, 240, 0.1); /* Sombra suave */
+    /* Outros estilos do contêiner do menu */
+}
 
+/* Estilo da lista do menu */
+.menu {
+    list-style: none;
+    display: flex; /* Alinha os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    margin: 2;
+    padding: 2;
+}
+
+/* Estilo dos itens do menu */
+.menu li {
+    margin-right: 20px; /* Espaço entre os itens do menu */
+}
+
+/* Estilo dos links do menu */
+.menu a {
+    text-decoration: none;
+    color: #b67878;
+    font-weight: bold;
+    /* Outros estilos dos links do menu */
+}
+
+/* Estilo do conteúdo da página */
+.content {
+    margin-top: 20px; /* Altura do menu + margem para espaço entre o menu e o conteúdo */
+    /* Outros estilos do conteúdo */
+}
+        
     </style>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0NZ0QJTN2"></script>
@@ -219,6 +259,15 @@
 </head>
     
 <body>
+ <div class="menu-container">
+        <ul class="menu">
+            <li><a href="https://receitafit.github.io/receita/">INICIO</a></li>
+            <li><a href="https://www.youtube.com/@ReceitaFitLima">YOUTUBE</a></li>
+            <li><a href="https://instagram.com/fitr.eceita?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">INSTAGRAM</a></li>
+            <!-- Adicione mais itens de menu aqui -->
+        </ul>
+    </div>
+    
       <div class="background-container">
         <!-- Conteúdo da sua página aqui -->
       </div>
