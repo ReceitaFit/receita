@@ -267,7 +267,15 @@
 </head>
     
 <body>
-
+<script type="text/javascript">
+    (function () {var options = 
+    {whatsapp: "+5511 959834631",company_logo_url: "", greeting_message: "Olá!", call_to_action: "Fale conosco aqui!", 
+     position: "left", };var proto = document.location.protocol,
+        host = "jivo.link", 
+        url = proto + "//" + host;var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/ferramentas-de-marketing/jivowpp.js';s.onload = function () 
+    { WhWidgetSendButton.init(host, proto, options); };var x = document.getElementsByTagName
+        ('script')[0]; x.parentNode.insertBefore(s, x);})();</script>
+									
     
  <div class="menu-container">
         <ul class="menu">
@@ -278,19 +286,7 @@
             <!-- Adicione mais itens de menu aqui -->
         </ul>
     </div>
-    <script>
-        // Coloque o seu número de telefone no formato internacional (por exemplo, +123456789)
-        const phoneNumber = "+5511959834631";
-        const message = "Olá! Quero saber mais sobre seus produtos.";
 
-        // Função para abrir o WhatsApp com o número e a mensagem pré-preenchidos
-        function openWhatsApp() {
-            window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, "_blank");
-        }
-
-        // Adicione um ouvinte de clique ao botão
-        document.getElementById("whatsapp-button").addEventListener("click", openWhatsApp);
-    </script>
       <div class="background-container">
         <!-- Conteúdo da sua página aqui -->
       </div>
