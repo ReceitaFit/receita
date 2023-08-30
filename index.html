@@ -250,23 +250,6 @@
     height: auto;
 }  
 
-/* Estilização do botão do WhatsApp */
-.whatsapp-button {
-    display: inline-block;
-    background-color: #25d366;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.whatsapp-button img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
 
 
         
@@ -284,6 +267,8 @@
 </head>
     
 <body>
+
+    
  <div class="menu-container">
         <ul class="menu">
             <li><a href="#"><img src="hotmart-42.svg" alt="Logotipo"></a></li>
@@ -293,7 +278,19 @@
             <!-- Adicione mais itens de menu aqui -->
         </ul>
     </div>
-    
+    <script>
+        // Coloque o seu número de telefone no formato internacional (por exemplo, +123456789)
+        const phoneNumber = "+5511959834631";
+        const message = "Olá! Quero saber mais sobre seus produtos.";
+
+        // Função para abrir o WhatsApp com o número e a mensagem pré-preenchidos
+        function openWhatsApp() {
+            window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, "_blank");
+        }
+
+        // Adicione um ouvinte de clique ao botão
+        document.getElementById("whatsapp-button").addEventListener("click", openWhatsApp);
+    </script>
       <div class="background-container">
         <!-- Conteúdo da sua página aqui -->
       </div>
@@ -374,9 +371,6 @@
         <p>&copy; 2023 Receita Fit. Todos os direitos reservados.</p>
     </footer>
      </center> 
-     <a href="https://api.whatsapp.com/send?phone=11959834631" target="_blank" class="whatsapp-button">
-        <img src="whatsapp.png" alt="WhatsApp">
-        Entrar em Contato pelo WhatsApp
-    </a>       
+      
 </body>
 </html>
